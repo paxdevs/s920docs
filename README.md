@@ -32,3 +32,6 @@ Version needs section '.gnu.version_r' contains 2 entries:
   0x0040:   Name: GLIBC_2.4  Flags: none  Version: 2
 ```
 The additional GLIBC_2.34 probably causes it to not load.
+
+### Code crashes?
+It doesn't seem to like some syscalls, like `clock_gettime` or spawning threads
